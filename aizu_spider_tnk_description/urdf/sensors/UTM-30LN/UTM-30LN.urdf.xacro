@@ -15,13 +15,13 @@
       <visual>
         <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
         <geometry>
-          <mesh filename="package://aizu_spider_tnk_description/urdf/UTM-30LN/-root-shape-0.dae" scale="1.0 1.0 1.0" />
+          <mesh filename="package://aizu_spider_tnk_description/urdf/sensors/UTM-30LN/-root-shape-0.dae" scale="1.0 1.0 1.0" />
         </geometry>
       </visual>
       <collision>
         <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
         <geometry>
-          <mesh filename="package://aizu_spider_tnk_description/urdf/UTM-30LN/-root-shape-0.dae" scale="1.0 1.0 1.0" />
+          <mesh filename="package://aizu_spider_tnk_description/urdf/sensors/UTM-30LN/-root-shape-0.dae" scale="1.0 1.0 1.0" />
         </geometry>
       </collision>
     </link>
