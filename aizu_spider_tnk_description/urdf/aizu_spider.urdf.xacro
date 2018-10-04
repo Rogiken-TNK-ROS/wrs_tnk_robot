@@ -2,5 +2,9 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider">
   <!-- Load Basic -->
   <include filename="$(find aizu_spider_tnk_description)/urdf/aizu_spider_basic.urdf.xacro"/>  
+
+  <!-- Load Sensors -->
+  <include filename="$(find aizu_spider_tnk_description)/urdf/sensors/sensors.urdf.xacro"/>  
+    
   
 </robot>
