@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_tnk">
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/CHASSIS/CHASSIS.urdf.xacro"/>
+  <link name="base_link"/>
+  <xacro:chassis_v0/>
+z</robot>
