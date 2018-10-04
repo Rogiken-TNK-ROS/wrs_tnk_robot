@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_tnk">
+  <xacro:macro name="flipper_v0" params="prefix reflect *origin">
+    <joint name="chassis_to_${prefix}_flipper" type="continuous">
+      <parent link="chassis"/>
+      <child link="${prefix}_flipper"/>
+      <insert_block name="origin"/>
+      <axis xyz="0 ${reflect} 0"/>
+    </joint>
+    <link name="${prefix}_flipper">
+      <inertial>
+        <mass value="0.71405" />
+        <origin xyz="0 0.00756 0.14824" rpy="0 -0 0" />
+        <inertia ixx="0.00710373242" ixy="0.0" ixz="0.0"
+                 iyy="0.00733928172" iyz="-0.00019168924" izz="0.00092891251" />
+      </inertial>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/FLIPPER/-root-shape-0.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/FLIPPER/-root-shape-1.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/FLIPPER/-root-shape-2.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/FLIPPER/-root-shape-0.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/FLIPPER/-root-shape-1.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/FLIPPER/-root-shape-2.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+</robot>
