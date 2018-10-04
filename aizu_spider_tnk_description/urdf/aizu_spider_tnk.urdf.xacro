@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_tnk">
 
-  <xacro:property name="M_PI" value="3.1415926535897931"/>
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/common.xacro"/>
   
   <link name="base_link"/>
 
