@@ -1,9 +1,5 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_tnk">
-
-  <material name="off_white">
-    <color rgba="1 1 0.752941 1"/>
-  </material>
   
   <xacro:macro name="track_wheel_v0" params="parent prefix reflect:=1 *origin">
     <joint name="${parent}_to_${prefix}_track_wheel" type="continuous">
@@ -22,6 +18,65 @@
         <origin xyz="0 ${reflect*0.045/2} 0" rpy="${M_PI/2} 0 0"/>
         <geometry>
           <cylinder radius="0.07681" length="0.045"/>
+        </geometry>
+        <material name="off_white"/>
+      </visual>
+      <collision>
+        <origin xyz="0 ${reflect*0.045/2} 0" rpy="${M_PI/2} 0 0"/>
+        <geometry>
+          <cylinder radius="0.07681" length="0.045"/>
+        </geometry>
+        <material name="off_white"/>
+      </collision>
+    </link>
+  </xacro:macro>
+
+   <xacro:macro name="sub_track_wheel1_v0" params="parent prefix reflect:=1">
+    <joint name="${parent}_to_${prefix}_sub_track_wheel1" type="continuous">
+      <parent link="${parent}"/>
+      <child link="${prefix}_sub_track_wheel1"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+    <link name="${prefix}_sub_track_wheel1">
+      <inertial>
+        <mass value="2.23528"/>
+        <inertia ixx="0.00367412297" ixy="0" ixz="0"
+                 iyy="0.00659383758" iyz="0" izz="0.00367412297"/>
+      </inertial>
+      <visual>
+        <origin xyz="0 ${reflect*0.045/2} 0" rpy="${M_PI/2} 0 0"/>
+        <geometry>
+          <cylinder radius="0.07681" length="0.045"/>
+        </geometry>
+        <material name="off_white"/>
+      </visual>
+      <collision>
+        <origin xyz="0 ${reflect*0.045/2} 0" rpy="${M_PI/2} 0 0"/>
+        <geometry>
+          <cylinder radius="0.07681" length="0.045"/>
+        </geometry>
+        <material name="off_white"/>
+      </collision>
+    </link>
+  </xacro:macro>
+
+   <xacro:macro name="sub_track_wheel2_v0" params="parent prefix reflect:=1 *origin">
+    <joint name="${parent}_to_${prefix}_sub_track_wheel2" type="continuous">
+      <parent link="${parent}"/>
+      <child link="${prefix}_sub_track_wheel2"/>
+      <insert_block name="origin"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+    <link name="${prefix}_sub_track_wheel2">
+      <inertial>
+        <mass value="0.49044"/>
+        <inertia ixx="0.0024144170" ixy="0" ixz="0"
+                 iyy="0.00032463614" iyz="0" izz="0.00024144170"/>
+      </inertial>
+      <visual>
+        <origin xyz="0 ${reflect*0.044/2} 0" rpy="${M_PI/2} 0 0"/>
+        <geometry>
+          <cylinder radius="0.036385" length="0.044"/>
         </geometry>
         <material name="off_white"/>
       </visual>
