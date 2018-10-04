@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_tnk">
+  <!-- Sub Belts -->
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/SUB_BELT/SUB_BELT.urdf.xacro"/>
+  <!-- Wheels -->
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/WHEELS/WHEELS.urdf.xacro"/>
+  
   <xacro:macro name="flipper_v0" params="prefix reflect *origin">
     <joint name="chassis_to_${prefix}_flipper" type="continuous">
       <parent link="chassis"/>
@@ -51,6 +56,16 @@
         </geometry>
       </collision>
     </link>
+
+    <xacro:sub_belt_v0 prefix="${prefix}"/>
+
+    <xacro:sub_track_wheel1_v0 parent="${prefix}_flipper" prefix="${prefix}" reflect="0">
+    </xacro:sub_track_wheel1_v0>
+
+    <xacro:sub_track_wheel2_v0 parent="${prefix}_flipper" prefix="${prefix}" reflect="0">
+      <origin xyz="0.29450 0 0"/>
+    </xacro:sub_track_wheel2_v0>
+  
   </xacro:macro>
 
   <!-- Flippers -->
@@ -66,4 +81,5 @@
   <xacro:flipper_v0 prefix="BL" reflect="1">
     <origin xyz="-0.234 0.22350 0.062" rpy="0 0 ${M_PI}"/>
   </xacro:flipper_v0>
+
 </robot>
