@@ -1,0 +1,703 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_basic">
+  <xacro:macro name="chassis_v0">
+    <joint name="base_link_to_chassis" type="fixed">
+      <parent link="base_link"/>
+      <child link="chassis"/>
+    </joint>
+    <link name="chassis">
+      <inertial>
+        <mass value="47.91109" />
+        <origin xyz="-0.08192 0 0.15046" rpy="0 -0 0" />
+        <inertia ixx="1.15503784921" ixy="0.0" ixz="-0.21517604538"
+                 iyy="2.13753698965" iyz="0.0" izz="1.94665822762" />
+      </inertial>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-0.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-1.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-2.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-3.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-4.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-5.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-6.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-7.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-8.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-9.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-10.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-11.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-12.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-13.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-14.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-15.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-16.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-17.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-18.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-19.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-20.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-21.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-22.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-23.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-24.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-25.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-26.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-27.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-28.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-29.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-30.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-31.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-32.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-33.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-34.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-35.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-36.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-37.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-38.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-39.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-40.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-41.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-42.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-43.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-44.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-45.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-46.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-47.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-48.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-49.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-50.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-51.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-52.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-53.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-54.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-0.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-1.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-2.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-3.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-4.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-5.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-6.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-7.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-8.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-9.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-10.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-11.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-12.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-13.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-14.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-15.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-16.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-17.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-18.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-19.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-20.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-21.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-22.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-23.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-24.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-25.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-26.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-27.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-28.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-29.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-30.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-31.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-32.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-33.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-34.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-35.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-36.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-37.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-38.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-39.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-40.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-41.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-42.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-43.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-44.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-45.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-46.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-47.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-48.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-49.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-50.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-51.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-52.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-53.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/CHASSIS/-root-shape-54.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+  
+  <!-- Chassis -->
+  <xacro:chassis_v0/>
+  <!-- Main Belts -->
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/MAIN_BELT/MAIN_BELT.urdf.xacro"/>
+  <xacro:main_belt_v0 prefix="right">
+    <origin xyz="0 -0.14150 0.062" rpy="0 0 ${M_PI}"/>
+  </xacro:main_belt_v0>
+  <xacro:main_belt_v0 prefix="left">
+    <origin xyz="0 0.14150 0.062" rpy="0 0 0"/>
+  </xacro:main_belt_v0>
+  <!-- Wheels -->
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/WHEELS/WHEELS.urdf.xacro"/>
+  <xacro:track_wheel_v0 parent="chassis" prefix="FR">
+    <origin xyz="0.234 -0.146 0.062" rpy="0 0 0"/>    
+  </xacro:track_wheel_v0>
+  <xacro:track_wheel_v0 parent="chassis" prefix="BR">
+    <origin xyz="-0.234 -0.146 0.062" rpy="0 0 0"/>    
+  </xacro:track_wheel_v0>
+  <xacro:track_wheel_v0 parent="chassis" prefix="FL" reflect="-1">
+    <origin xyz="0.234 0.146 0.062" rpy="0 0 0"/>    
+  </xacro:track_wheel_v0>
+  <xacro:track_wheel_v0 parent="chassis" prefix="BL" reflect="-1">
+    <origin xyz="-0.234 0.146 0.062" rpy="0 0 0"/>    
+  </xacro:track_wheel_v0>                     
+  
+</robot>
