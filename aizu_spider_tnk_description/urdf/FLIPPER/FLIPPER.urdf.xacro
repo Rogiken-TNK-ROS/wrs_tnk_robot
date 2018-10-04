@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_tnk">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_basic">
   <!-- Sub Belts -->
   <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/SUB_BELT/SUB_BELT.urdf.xacro"/>
   <!-- Wheels -->

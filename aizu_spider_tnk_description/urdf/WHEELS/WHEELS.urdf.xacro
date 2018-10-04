@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_tnk">
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_basic">
   
   <xacro:macro name="track_wheel_v0" params="parent prefix reflect:=1 *origin">
     <joint name="${parent}_to_${prefix}_track_wheel" type="continuous">
