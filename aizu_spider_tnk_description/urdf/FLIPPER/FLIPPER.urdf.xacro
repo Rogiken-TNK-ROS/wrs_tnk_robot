@@ -52,4 +52,18 @@
       </collision>
     </link>
   </xacro:macro>
+
+  <!-- Flippers -->
+  <xacro:flipper_v0 prefix="FR" reflect="-1">
+    <origin xyz="0.234 -0.22350 0.062"/>
+  </xacro:flipper_v0>
+  <xacro:flipper_v0 prefix="FL" reflect="-1">
+    <origin xyz="0.234 0.22350 0.062"/>
+  </xacro:flipper_v0>
+  <xacro:flipper_v0 prefix="BR" reflect="1">
+    <origin xyz="-0.234 -0.22350 0.062" rpy="0 0 ${M_PI}"/>
+  </xacro:flipper_v0>
+  <xacro:flipper_v0 prefix="BL" reflect="1">
+    <origin xyz="-0.234 0.22350 0.062" rpy="0 0 ${M_PI}"/>
+  </xacro:flipper_v0>
 </robot>
