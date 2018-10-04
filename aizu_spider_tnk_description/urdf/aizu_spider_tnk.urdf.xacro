@@ -1,6 +1,27 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_tnk">
-  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/CHASSIS/CHASSIS.urdf.xacro"/>
+
+  <xacro:property name="M_PI" value="3.1415926535897931"/>
+  
   <link name="base_link"/>
+
+  <!-- Chassis -->
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/CHASSIS/CHASSIS.urdf.xacro"/>
   <xacro:chassis_v0/>
+
+  <!-- Flippers -->
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/FLIPPER/FLIPPER.urdf.xacro"/>
+  <xacro:flipper_v0 prefix="FR" reflect="-1">
+    <origin xyz="0.234 -0.22350 0.062"/>
+  </xacro:flipper_v0>
+  <xacro:flipper_v0 prefix="FL" reflect="-1">
+    <origin xyz="0.234 0.22350 0.062"/>
+  </xacro:flipper_v0>
+  <xacro:flipper_v0 prefix="BR" reflect="1">
+    <origin xyz="-0.234 -0.22350 0.062" rpy="0 0 ${M_PI}"/>
+  </xacro:flipper_v0>
+  <xacro:flipper_v0 prefix="BL" reflect="1">
+    <origin xyz="-0.234 0.22350 0.062" rpy="0 0 ${M_PI}"/>
+  </xacro:flipper_v0>
+
 z</robot>
