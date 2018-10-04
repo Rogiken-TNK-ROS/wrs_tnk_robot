@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_tnk">
+
+  <material name="off_white">
+    <color rgba="1 1 0.752941 1"/>
+  </material>
+  
+  <xacro:macro name="track_wheel_v0" params="parent prefix reflect:=1 *origin">
+    <joint name="${parent}_to_${prefix}_track_wheel" type="continuous">
+      <parent link="${parent}"/>
+      <child link="${prefix}_track_wheel"/>
+      <insert_block name="origin"/>
+      <axis xyz="0 1 0"/>
+    </joint>
+    <link name="${prefix}_track_wheel">
+      <inertial>
+        <mass value="0.08293"/>
+        <inertia ixx="0.00003407162" ixy="0" ixz="0"
+                 iyy="0.00000609616" iyz="0" izz="0.00003407162"/>
+      </inertial>
+      <visual>
+        <origin xyz="0 ${reflect*0.045/2} 0" rpy="${M_PI/2} 0 0"/>
+        <geometry>
+          <cylinder radius="0.07681" length="0.045"/>
+        </geometry>
+        <material name="off_white"/>
+      </visual>
+      <collision>
+        <origin xyz="0 ${reflect*0.045/2} 0" rpy="${M_PI/2} 0 0"/>
+        <geometry>
+          <cylinder radius="0.07681" length="0.045"/>
+        </geometry>
+        <material name="off_white"/>
+      </collision>
+    </link>
+  </xacro:macro>
+</robot>
