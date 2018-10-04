@@ -1,21 +1,29 @@
-<robot name="aizu_spider_tnk">
-  <link name="sub_belt">
-    <inertial>
-      <mass value="0.0" />
-      <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
-      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
-    </inertial>
-    <visual>
-      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
-      <geometry>
-        <mesh filename="package://aizu_spider_tnk_description/urdf/SUB_BELT/-root-shape-0.dae" scale="1.0 1.0 1.0" />
-      </geometry>
-    </visual>
-    <collision>
-      <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
-      <geometry>
-        <mesh filename="package://aizu_spider_tnk_description/urdf/SUB_BELT/-root-shape-0.dae" scale="1.0 1.0 1.0" />
-      </geometry>
-    </collision>
-  </link>
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider_tnk">
+  <xacro:macro name="sub_belt_v0" params="prefix *origin"> 
+    <joint name="${prefix}_flipper_to_${prefix}_sub_belt" type="fixed">
+      <parent link="${prefix}_flipper"/>
+      <child link="${prefix}_sub_belt"/>
+      <insert_block name="origin"/>
+    </joint>
+    <link name="${prefix}_sub_belt">
+      <inertial>
+        <mass value="0.0" />
+        <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
+        <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+      </inertial>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/SUB_BELT/-root-shape-0.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/SUB_BELT/-root-shape-0.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
 </robot>
