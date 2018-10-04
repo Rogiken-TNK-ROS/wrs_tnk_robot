@@ -674,4 +674,30 @@
       </collision>
     </link>
   </xacro:macro>
+  
+  <!-- Chassis -->
+  <xacro:chassis_v0/>
+  <!-- Main Belts -->
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/MAIN_BELT/MAIN_BELT.urdf.xacro"/>
+  <xacro:main_belt_v0 prefix="right">
+    <origin xyz="0 -0.14150 0.062" rpy="0 0 ${M_PI}"/>
+  </xacro:main_belt_v0>
+  <xacro:main_belt_v0 prefix="left">
+    <origin xyz="0 0.14150 0.062" rpy="0 0 0"/>
+  </xacro:main_belt_v0>
+  <!-- Wheels -->
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/WHEELS/WHEELS.urdf.xacro"/>
+  <xacro:track_wheel_v0 parent="chassis" prefix="FR">
+    <origin xyz="0.234 -0.146 0.062" rpy="0 0 0"/>    
+  </xacro:track_wheel_v0>
+  <xacro:track_wheel_v0 parent="chassis" prefix="BR">
+    <origin xyz="-0.234 -0.146 0.062" rpy="0 0 0"/>    
+  </xacro:track_wheel_v0>
+  <xacro:track_wheel_v0 parent="chassis" prefix="FL" reflect="-1">
+    <origin xyz="0.234 0.146 0.062" rpy="0 0 0"/>    
+  </xacro:track_wheel_v0>
+  <xacro:track_wheel_v0 parent="chassis" prefix="BL" reflect="-1">
+    <origin xyz="-0.234 0.146 0.062" rpy="0 0 0"/>    
+  </xacro:track_wheel_v0>                     
+  
 </robot>
