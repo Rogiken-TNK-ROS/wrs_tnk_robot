@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider">
   <xacro:macro name="mcm-4350fish_v0" params="prefix *origin">
-    <joint name="chassis_to_${prefix}_mcm-4350fish" type="fixed">
+    <joint name="chassis_to_${prefix}_CAMERA" type="fixed">
       <parent link="chassis"/>
-      <child link="${prefix}_mcm-4350fish"/>
+      <child link="${prefix}_CAMERA"/>
       <insert_block name="origin"/>
     </joint>
-    <link name="${prefix}_mcm-4350fish">
+    <link name="${prefix}_CAMERA">
       <inertial>
         <mass value="0.0" />
         <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
