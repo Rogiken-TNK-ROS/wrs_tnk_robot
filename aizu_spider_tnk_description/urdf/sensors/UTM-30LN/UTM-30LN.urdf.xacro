@@ -10,7 +10,7 @@
     <joint name="chassis_to_virtual_${prefix}_LRF" type="fixed">
       <parent link="chassis"/>
       <child link="virtual_${prefix}_LRF"/>
-      <insert_block name="origin"/>
+      <xacro:insert_block name="origin"/>
     </joint>
     <link name="virtual_${prefix}_LRF">
       <inertial>

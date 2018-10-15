@@ -5,7 +5,7 @@
     <joint name="${parent}_to_${prefix}_track_wheel" type="continuous">
       <parent link="${parent}"/>
       <child link="${prefix}_track_wheel"/>
-      <insert_block name="origin"/>
+      <xacro:insert_block name="origin"/>
       <axis xyz="0 1 0"/>
     </joint>
     <link name="${prefix}_track_wheel">
@@ -64,7 +64,7 @@
     <joint name="${parent}_to_${prefix}_sub_track_wheel2" type="continuous">
       <parent link="${parent}"/>
       <child link="${prefix}_sub_track_wheel2"/>
-      <insert_block name="origin"/>
+      <xacro:insert_block name="origin"/>
       <axis xyz="0 1 0"/>
     </joint>
     <link name="${prefix}_sub_track_wheel2">

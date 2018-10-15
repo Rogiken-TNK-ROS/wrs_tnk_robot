@@ -4,7 +4,7 @@
     <joint name="chassis_to_${prefix}_main_belt" type="fixed">
       <parent link="chassis"/>
       <child link="${prefix}_main_belt"/>
-      <insert_block name="origin"/>
+      <xacro:insert_block name="origin"/>
     </joint>
     <link name="${prefix}_main_belt">
       <inertial>
