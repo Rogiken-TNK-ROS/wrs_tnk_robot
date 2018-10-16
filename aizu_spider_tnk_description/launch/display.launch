@@ -17,4 +17,5 @@
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_configs)"/>
 
   <include file="$(find aizu_spider_tnk_description)/launch/mapping.launch"/>
+  <include file="$(find tps_base_link)/launch/tps_base_link.launch"/>
 </launch>
