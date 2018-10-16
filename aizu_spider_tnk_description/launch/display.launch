@@ -1,7 +1,7 @@
 <launch>
   <arg name="model" default="$(find aizu_spider_tnk_description)/urdf/aizu_spider_tnk.urdf.xacro"/>
   <arg name="gui" default="True" />
-  <arg name="rviz_configs" value="$(find aizu_spider_tnk_description)/configs/wrs.rviz)"/>
+  <arg name="rviz_configs" value="$(find aizu_spider_tnk_description)/configs/wrs.rviz"/>
 
   <!-- <param name="robot_description" textfile="$(arg model)"/> -->
   <param name="robot_description" command="$(find xacro)/xacro --inorder '$(arg model)'"/>
