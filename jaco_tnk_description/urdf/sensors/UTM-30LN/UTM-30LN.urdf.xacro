@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider">
+  <xacro:macro name="utm-30ln_v0" params="prefix *origin">
+    <joint name="virtual_${prefix}_LRF_to_${prefix}_LRF" type="fixed">
+      <parent link="virtual_${prefix}_LRF"/>
+      <child link="${prefix}_LRF"/>
+      <origin rpy="${-M_PI/2} ${M_PI/2} 0"/>
+    </joint>
+    <link name="${prefix}_LRF"/>
+    <joint name="chassis_to_virtual_${prefix}_LRF" type="fixed">
+      <parent link="chassis"/>
+      <child link="virtual_${prefix}_LRF"/>
+      <xacro:insert_block name="origin"/>
+    </joint>
+    <link name="virtual_${prefix}_LRF">
+      <inertial>
+        <mass value="0.0" />
+        <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
+        <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0" />
+      </inertial>
+      <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/sensors/UTM-30LN/-root-shape-0.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <geometry>
+          <mesh filename="package://aizu_spider_tnk_description/urdf/sensors/UTM-30LN/-root-shape-0.dae" scale="1.0 1.0 1.0" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+</robot>

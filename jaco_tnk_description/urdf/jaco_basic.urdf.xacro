@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="jaco_basic_basic">
+
+  <xacro:macro name="">
+    
+  </xacro:macro>
+  
+  <xacro:include filename="$(find jaco_basic_tnk_description)/urdf/common.xacro"/>
+
+  <xacro:include filename="$(find jaco_basic_tnk_description)/urdf/CHASSIS/CHASSIS.urdf.xacro"/>
+  <!-- Flippers -->
+  <xacro:include filename="$(find jaco_basic_tnk_description)/urdf/FLIPPER/FLIPPER.urdf.xacro"/>
+  
+  
+</robot>

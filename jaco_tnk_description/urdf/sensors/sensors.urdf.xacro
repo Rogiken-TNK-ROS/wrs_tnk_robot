@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider">
+  <!-- Camera -->
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/sensors/MCM-4350FISH/MCM-4350FISH.urdf.xacro"/>
+  <xacro:mcm-4350fish_v0 prefix="FRONT">
+    <origin xyz="0.25470 0 0.13550" rpy="${M_PI/2} 0 ${-M_PI/2}"/>
+  </xacro:mcm-4350fish_v0>
+  <xacro:mcm-4350fish_v0 prefix="LEFT">
+    <origin xyz="0 0.17850 0.04450" rpy="${M_PI/2} 0 0"/>
+  </xacro:mcm-4350fish_v0>
+  <xacro:mcm-4350fish_v0 prefix="RIGHT">
+    <origin xyz="0 -0.17850 0.04450" rpy="${M_PI/2} 0 ${M_PI}"/>
+  </xacro:mcm-4350fish_v0>
+  <xacro:mcm-4350fish_v0 prefix="BACK">
+    <origin xyz="-0.35670 0 0.094" rpy="${M_PI/2} 0 ${M_PI/2}"/>
+  </xacro:mcm-4350fish_v0>
+  
+  <!-- LRF -->
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/sensors/UTM-30LN/UTM-30LN.urdf.xacro"/>
+  <xacro:utm-30ln_v0 prefix="FRONT">
+    <origin xyz="0.23415 0 0.19750" rpy="${M_PI/2} 0 ${-M_PI/2}"/>
+  </xacro:utm-30ln_v0>
+
+
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/sensors/LIDAR-VLP16/LIDAR-VLP16.urdf.xacro"/>
+  <xacro:lidar-vlp16_v0 prefix="TOP">
+    <origin xyz="0 0 0.7" rpy="${M_PI/2} 0 ${-M_PI/2}"/>
+  </xacro:lidar-vlp16_v0>
+
+  <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/sensors/ACC_SENSOR/ACC_SENSOR.urdf.xacro"/>
+  <xacro:acc_sensor_v0/>
+  
+</robot>
