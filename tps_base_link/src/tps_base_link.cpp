@@ -18,7 +18,7 @@ int main(int argc, char** argv)
   tf2_ros::TransformBroadcaster tb;
   geometry_msgs::TransformStamped ts;
   
-  ros::Rate r(25.0);
+  ros::Rate r(50.0);
   
   while(ros::ok()){
 	geometry_msgs::TransformStamped transform;
