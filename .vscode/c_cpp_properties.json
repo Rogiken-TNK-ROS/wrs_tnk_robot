@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/shimoe/workspace/ROS/icp_mapping_ws/devel/include",
+        "/opt/ros/kinetic/include",
+        "/home/shimoe/workspace/ROS/icp_mapping_ws/src/ethzasl_icp_mapping/ethzasl_gridmap_2d/include",
+        "/home/shimoe/workspace/ROS/icp_mapping_ws/src/ethzasl_icp_mapping/libpointmatcher_ros/include",
+        "/home/shimoe/workspace/ROS/icp_mapping_ws/src/pointcloud_tools/include",
+        "/usr/include"
+      ],
+      "name": "Linux"
+    }
+  ]
+}
