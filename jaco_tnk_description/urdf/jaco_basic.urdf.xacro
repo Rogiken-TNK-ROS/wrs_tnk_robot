@@ -1,15 +1,30 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="jaco_basic_basic">
-
-  <xacro:macro name="">
-    
-  </xacro:macro>
-  
   <xacro:include filename="$(find jaco_basic_tnk_description)/urdf/common.xacro"/>
+  
+  <xacro:macro name="jaco_base_v0">
+    <joint name="chassis_to_jaco_base" type="fixed">
+      <parent link=""/>
+      <child link="jaco_base_link"/>
+      <origin xyz="" rpy=""/>
+    </joint>
+    <link name="jaco_base_link">
+      <inertial>
+        <mass value="0.46734"/>
+        <inertia ixx="0.00095" ixy="0" ixz="0"
+                 iyy="0.00095" iyz="0" izz="0.000374"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <mesh filename="package://"
+        </geometry>
+      </visual>
+      <collision>
+      </collision>
+    </link>
+  </xacro:macro>
+  <xacro:jaco_base_v0/>
 
-  <xacro:include filename="$(find jaco_basic_tnk_description)/urdf/CHASSIS/CHASSIS.urdf.xacro"/>
-  <!-- Flippers -->
-  <xacro:include filename="$(find jaco_basic_tnk_description)/urdf/FLIPPER/FLIPPER.urdf.xacro"/>
   
   
 </robot>
