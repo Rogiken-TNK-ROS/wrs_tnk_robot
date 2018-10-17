@@ -8,7 +8,7 @@
 
   <xacro:include filename="$(find kinova_description)/urdf/j2n6s300_standalone.xacro"/>
 
-
+  <!-- JACO2 Arm -->
   <joint name="chassis_to_jaco_link" type="fixed">
     <parent link="chassis"/>
     <child link="jaco_link"/>
