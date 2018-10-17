@@ -107,7 +107,7 @@
 
         <xacro:kinova_armlink link_name="${prefix}link_finger_${finger_number}" link_mesh="finger_proximal" mesh_no="57"/>
 
-        <joint name="${prefix}joint_finger_${finger_number}" type="revolute">
+        <joint name="FINGER${finger_number}" type="revolute">
             <parent link="${hand}"/>
             <child link="${prefix}link_finger_${finger_number}"/>
             <axis xyz="0 0 1"/>
