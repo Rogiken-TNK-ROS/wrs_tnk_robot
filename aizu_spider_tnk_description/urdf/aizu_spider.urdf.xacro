@@ -12,7 +12,7 @@
   <joint name="chassis_to_jaco_link" type="fixed">
     <parent link="chassis"/>
     <child link="jaco_link"/>
-    <origin xyz=" -0.06320 -0.094 0.5150" rpy="${M_PI/2} ${M_PI/2} ${M_PI/2}"/>
+    <origin xyz=" -0.06320 -0.094 0.5150" rpy="${M_PI/2} 0 ${M_PI/2}"/>
     <!-- <origin xyz=" -0.06320 -0.094 0.5150" rpy="0 0 0"/> -->
   </joint>
   <link name="jaco_link"/>
