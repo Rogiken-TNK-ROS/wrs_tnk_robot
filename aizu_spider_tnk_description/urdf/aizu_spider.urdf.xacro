@@ -17,14 +17,5 @@
   </joint>
   <link name="jaco_link"/>
   <xacro:j2n6s300  base_parent="jaco_link"/>
-
-  <!-- God of  Kinect -->
-  <joint name="_to_ARM_Kinect" type="fixed">
-    <parent link="j2n6s300_end_effector"/>
-    <child link="ARM_Kinect"/>
-    <!-- <origin xyz="0.03116 0 0.11498" rpy="0 0 0"/> -->
-    <origin xyz="0 0 0" rpy="0 0 ${M_PI/2}"/>
-  </joint>
-  <link name="ARM_Kinect"/>
     
 </robot>
