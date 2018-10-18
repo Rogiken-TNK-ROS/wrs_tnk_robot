@@ -31,7 +31,7 @@
   <xacro:acc_sensor_v0/>
 
   <!-- God of  Kinect -->
-  <joint name="_to_ARM_Kinect" type="fixed">
+  <joint name="j2n6s300_end_effector_to_ARM_Kinect" type="fixed">
     <parent link="j2n6s300_end_effector"/>
     <child link="ARM_Kinect"/>
     <!-- <origin xyz="0.03116 0 0.11498" rpy="0 0 0"/> -->
