@@ -1,12 +1,18 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider">
   <xacro:macro name="utm-30ln_v0" params="prefix *origin">
-    <joint name="chassis_to_${prefix}_utm-30ln" type="fixed">
-      <parent link="chassis"/>
-      <child link="${prefix}_utm-30ln"/>
-      <insert_block name="origin"/>
+    <joint name="virtual_${prefix}_LRF_to_${prefix}_LRF" type="fixed">
+      <parent link="virtual_${prefix}_LRF"/>
+      <child link="${prefix}_LRF"/>
+      <origin rpy="${-M_PI/2} ${M_PI/2} 0"/>
     </joint>
-    <link name="${prefix}_utm-30ln">
+    <link name="${prefix}_LRF"/>
+    <joint name="chassis_to_virtual_${prefix}_LRF" type="fixed">
+      <parent link="chassis"/>
+      <child link="virtual_${prefix}_LRF"/>
+      <xacro:insert_block name="origin"/>
+    </joint>
+    <link name="virtual_${prefix}_LRF">
       <inertial>
         <mass value="0.0" />
         <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />

@@ -6,10 +6,10 @@
   <xacro:include filename="$(find aizu_spider_tnk_description)/urdf/WHEELS/WHEELS.urdf.xacro"/>
   
   <xacro:macro name="flipper_v0" params="prefix reflect *origin">
-    <joint name="chassis_to_${prefix}_flipper" type="continuous">
+    <joint name="${prefix}_FLIPPER" type="continuous">
       <parent link="chassis"/>
       <child link="${prefix}_flipper"/>
-      <insert_block name="origin"/>
+      <xacro:insert_block name="origin"/>
       <axis xyz="0 ${reflect} 0"/>
     </joint>
     <link name="${prefix}_flipper">
@@ -75,10 +75,10 @@
   <xacro:flipper_v0 prefix="FL" reflect="-1">
     <origin xyz="0.234 0.22350 0.062"/>
   </xacro:flipper_v0>
-  <xacro:flipper_v0 prefix="BR" reflect="1">
+  <xacro:flipper_v0 prefix="BR" reflect="-1">
     <origin xyz="-0.234 -0.22350 0.062" rpy="0 0 ${M_PI}"/>
   </xacro:flipper_v0>
-  <xacro:flipper_v0 prefix="BL" reflect="1">
+  <xacro:flipper_v0 prefix="BL" reflect="-1">
     <origin xyz="-0.234 0.22350 0.062" rpy="0 0 ${M_PI}"/>
   </xacro:flipper_v0>
 

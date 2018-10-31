@@ -1,11 +1,21 @@
 <launch>
   <arg name="model" default="$(find aizu_spider_tnk_description)/urdf/aizu_spider_tnk.urdf.xacro"/>
   <arg name="gui" default="True" />
+  <arg name="rviz_configs" value="$(find aizu_spider_tnk_description)/configs/wrs.rviz"/>
 
   <!-- <param name="robot_description" textfile="$(arg model)"/> -->
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(arg model)'"/>
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(arg model)'"/>
   <param name="use_gui" value="$(arg gui)"/>
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
-  <node name="rviz" pkg="rviz" type="rviz" required="true" />
+  <param name="use_sim_time" value="true"/>
+
+  <!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"> -->
+  <!--   <remap from="joint_state" to="/AizuSpider/joint_states"/> -->
+  <!-- </node> -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher">
+    <remap from="joint_states" to="/AizuSpider/joint_states"/>
+  </node>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_configs)"/>
+
+  <include file="$(find aizu_spider_tnk_description)/launch/mapping.launch"/>
+  <include file="$(find tps_base_link)/launch/tps_base_link.launch"/>
 </launch>

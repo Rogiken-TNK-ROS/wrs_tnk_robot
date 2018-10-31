@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="aizu_spider">
+
+  <xacro:macro name="lidar-vlp16_v0" params="prefix *origin">
+    <joint name="chassis_to_${prefix}_Velodyne" type="fixed">
+      <parent link="chassis"/>
+      <child link="${prefix}_Velodyne"/>
+      <xacro:insert_block name="origin"/>
+    </joint>
+    <link name="${prefix}_Velodyne">
+      <inertial>
+        <mass value="5.29071"/>
+        <origin xyz="0 0 0.03"/>
+        <inertia ixx="0.19949663865" ixy="0" ixz="0"
+                 iyy="0.57863919195" iyz="0.00041287283" izz="0.37968799701"/>
+      </inertial>
+      <visual>
+        <geometry>
+          <box size="0.073 0.073 0.0717"/>
+        </geometry>
+        <material name="orange"/>
+      </visual>
+      <collision>
+        <geometry>
+          <box size="0.073 0.073 0.0717"/>
+        </geometry>
+      </collision>
+    </link>      
+  </xacro:macro>
+
+</robot>
