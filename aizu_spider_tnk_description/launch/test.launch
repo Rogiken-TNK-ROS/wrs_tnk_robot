@@ -1,5 +1,7 @@
 <launch>
-  <arg name="model" default="$(find aizu_spider_tnk_description)/urdf/aizu_spider_tnk.urdf.xacro"/>
+  <arg name="model" default="$(find aizu_spider_tnk_description)/urdf/darm/DoubleArmV7A.urdf"/>
+  <!-- <arg name="model" default="$(find aizu_spider_tnk_description)/urdf/warec/WAREC1.urdf"/> -->
+    
   <arg name="gui" default="True" />
   <arg name="rviz_configs" value="$(find aizu_spider_tnk_description)/configs/wrs.rviz"/>
 
