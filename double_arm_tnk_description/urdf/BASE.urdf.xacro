@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Link -->
+  <link name="WHEEL_L0">
+    <visual>
+      <origin rpy="${-M_PI/2} 0 0"/>
+      <material name="wheel_color"/>
+      <geometry>
+        <cylinder radius="0.2" length="0.25"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="13.25" />
+      <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
+      <inertia ixx="0.2015" ixy="0.0" ixz="0.0" iyy="0.265" iyz="0.0" izz="0.2015" />
+    </inertial>
+  </link>
+  <link name="WHEEL_L1">
+    <visual>
+      <origin rpy="${-M_PI/2} 0 0"/>
+      <material name="wheel_color"/>
+      <geometry>
+        <cylinder radius="0.2" length="0.25"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="13.25" />
+      <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
+      <inertia ixx="0.2015" ixy="0.0" ixz="0.0" iyy="0.265" iyz="0.0" izz="0.2015" />
+    </inertial>
+  </link>
+  <link name="WHEEL_L2">
+    <visual>
+      <origin rpy="${-M_PI/2} 0 0"/>
+      <material name="wheel_color"/>
+      <geometry>
+        <cylinder radius="0.2" length="0.25"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="13.25" />
+      <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
+      <inertia ixx="0.2015" ixy="0.0" ixz="0.0" iyy="0.265" iyz="0.0" izz="0.2015" />
+    </inertial>
+  </link>
+  <link name="WHEEL_L3">
+    <visual>
+      <origin rpy="${-M_PI/2} 0 0"/>
+      <material name="wheel_color"/>
+      <geometry>
+        <cylinder radius="0.2" length="0.25"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="13.25" />
+      <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
+      <inertia ixx="0.2015" ixy="0.0" ixz="0.0" iyy="0.265" iyz="0.0" izz="0.2015" />
+    </inertial>
+  </link>
+  <link name="WHEEL_R0">
+    <visual>
+      <origin rpy="${-M_PI/2} 0 0"/>
+      <material name="wheel_color"/>
+      <geometry>
+        <cylinder radius="0.2" length="0.25"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="13.25" />
+      <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
+      <inertia ixx="0.2015" ixy="0.0" ixz="0.0" iyy="0.265" iyz="0.0" izz="0.2015" />
+    </inertial>
+  </link>
+  <link name="WHEEL_R1">
+    <visual>
+      <origin rpy="${-M_PI/2} 0 0"/>
+      <material name="wheel_color"/>
+      <geometry>
+        <cylinder radius="0.2" length="0.25"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="13.25" />
+      <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
+      <inertia ixx="0.2015" ixy="0.0" ixz="0.0" iyy="0.265" iyz="0.0" izz="0.2015" />
+    </inertial>
+  </link>
+  <link name="WHEEL_R2">
+    <visual>
+      <origin rpy="${-M_PI/2} 0 0"/>
+      <material name="wheel_color"/>
+      <geometry>
+        <cylinder radius="0.2" length="0.25"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="13.25" />
+      <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
+      <inertia ixx="0.2015" ixy="0.0" ixz="0.0" iyy="0.265" iyz="0.0" izz="0.2015" />
+    </inertial>
+  </link>
+  <link name="WHEEL_R3">
+    <visual>
+      <origin rpy="${-M_PI/2} 0 0"/>
+      <material name="wheel_color"/>
+      <geometry>
+        <cylinder radius="0.2" length="0.25"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="13.25" />
+      <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
+      <inertia ixx="0.2015" ixy="0.0" ixz="0.0" iyy="0.265" iyz="0.0" izz="0.2015" />
+    </inertial>
+  </link>
+
+  <link name="WIRE_GUARD_L">
+    <visual>
+      <!-- <origin xyz="0.02 0.61 -0.32" rpy="0.0 -0.0 0.0" /> -->
+      <!-- <origin xyz="0.26 0.6 -0.295" rpy="0.0 -0.0 0.0" /> -->
+      <origin xyz="0.72 -0.01 0.0255" rpy="${M_PI/2} 0 0"/>
+      <material name="tframe_color"/>
+      <geometry>
+        <mesh filename="package://double_arm_tnk_description/meshes/tframe.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.72 -0.01 0.0255" rpy="${M_PI/2} 0 0"/>
+      <geometry>
+        <mesh filename="package://double_arm_tnk_description/meshes/tframe.stl"/>
+      </geometry>      
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
+    </inertial>
+  </link>
+  <link name="WIRE_GUARD_R">
+    <visual>
+      <origin xyz="0.72 0.01 0.0255" rpy="${M_PI/2} 0 0"/>
+      <material name="tframe_color"/>
+      <geometry>
+        <mesh filename="package://double_arm_tnk_description/meshes/tframe.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.72 0.01 0.0255" rpy="${M_PI/2} 0 0"/>
+      <geometry>
+        <mesh filename="package://double_arm_tnk_description/meshes/tframe.stl"/>
+      </geometry>      
+    </collision>
+    <inertial>
+      <mass value="0.1" />
+      <origin xyz="0.0 0.0 0.0" rpy="0 -0 0" />
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001" />
+    </inertial>
+  </link>
+  <link name="TFRAME">
+    <visual>
+      <origin rpy="${M_PI/2} 0 0"/>
+      <material name="tframe_color"/>
+      <geometry>
+        <mesh filename="package://double_arm_tnk_description/meshes/frame1.stl"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="${M_PI/2} 0 0"/>
+      <geometry>
+        <mesh filename="package://double_arm_tnk_description/meshes/frame1.stl"/>
+      </geometry>      
+    </collision>
+    <inertial>
+      <mass value="1e-06" />
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+  </link>
+
+  <!-- Joint -->
+  <joint name="WHEEL_L0" type="continuous">
+    <origin xyz="0.74 0.6 -0.295" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="TFRAME" />
+    <child link="WHEEL_L0" />
+  </joint>
+  <joint name="WHEEL_L1" type="continuous">
+    <origin xyz="0.26 0.6 -0.295" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="TFRAME" />
+    <child link="WHEEL_L1" />
+  </joint>
+  <joint name="WHEEL_L2" type="continuous">
+    <origin xyz="-0.22 0.6 -0.295" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="TFRAME" />
+    <child link="WHEEL_L2" />
+  </joint>
+  <joint name="WHEEL_L3" type="continuous">
+    <origin xyz="-0.7 0.6 -0.295" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="TFRAME" />
+    <child link="WHEEL_L3" />
+  </joint>
+  <joint name="WHEEL_R0" type="continuous">
+    <origin xyz="0.74 -0.6 -0.295" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="TFRAME" />
+    <child link="WHEEL_R0" />
+  </joint>
+  <joint name="WHEEL_R1" type="continuous">
+    <origin xyz="0.26 -0.6 -0.295" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="TFRAME" />
+    <child link="WHEEL_R1" />
+  </joint>
+  <joint name="WHEEL_R2" type="continuous">
+    <origin xyz="-0.22 -0.6 -0.295" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="TFRAME" />
+    <child link="WHEEL_R2" />
+  </joint>
+  <joint name="WHEEL_R3" type="continuous">
+    <origin xyz="-0.7 -0.6 -0.295" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="TFRAME" />
+    <child link="WHEEL_R3" />
+  </joint>
+  <joint name="WIRE_GUARD_L" type="fixed">
+    <origin xyz="0.02 0.61 -0.32" rpy="0.0 -0.0 0.0" />
+    <parent link="TFRAME" />
+    <child link="WIRE_GUARD_L" />
+  </joint>
+  <joint name="WIRE_GUARD_R" type="fixed">
+    <origin xyz="0.02 -0.61 -0.32" rpy="0.0 -0.0 0.0" />
+    <parent link="TFRAME" />
+    <child link="WIRE_GUARD_R" />
+  </joint>
+  
+</robot>

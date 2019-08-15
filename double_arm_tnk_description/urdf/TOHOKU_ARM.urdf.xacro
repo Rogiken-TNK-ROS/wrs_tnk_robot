@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<robot  xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Link -->
+  <link name="MFRAME">
+    <inertial>
+      <mass value="1e-06" />
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+  </link>
+
+  <link name="BLOCK">
+    <inertial>
+      <mass value="1e-06" />
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+  </link>
+
+  <link name="BOOM">
+    <inertial>
+      <mass value="88.2695650987" />
+      <origin xyz="-0.831227871921433 0.142962825496583 0.0" rpy="0 -0 0" />
+      <inertia ixx="1.48138597730672" ixy="0.1902362002908" ixz="1.05546586084014e-15" iyy="31.4435403431583" iyz="-2.05305944696362e-17" izz="32.5752155940256" />
+    </inertial>
+    <collision>
+      <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 0.375245789179 -3.14159265359" />
+      <geometry>
+        <cylinder radius="0.05" length="0.116" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.4186879055919116 -1.9907224074340133e-16 0.16492555202593392" rpy="1.13579022766e-16 -0.375245789179 3.14159265359" />
+      <geometry>
+        <box size="0.9 0.116 0.1" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.40419402094470985 -2.1228539612808136e-16 0.1948991622161264" rpy="3.02966782347e-17 -0.449422282389 3.14159265359" />
+      <geometry>
+        <box size="0.895 0.116 0.1" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.1879713766505169 -4.354270489073068e-16 0.18116085136942053" rpy="8.75683157457e-17 -0.296705972839 3.14159265359" />
+      <geometry>
+        <box size="0.899 0.116 0.09" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.1953232786166952 -4.750760030961959e-16 0.22230935726550022" rpy="1.15686232084e-16 -0.381354441561 3.14159265359" />
+      <geometry>
+        <box size="0.92 0.116 0.09" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.7600000000000025 -0.05325000000000048 2.3733810657253497e-16" rpy="1.57079632679 -0.296705972839 3.14159265359" />
+      <geometry>
+        <cylinder radius="0.04" length="0.0095" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.6834956195229596 -0.05325000000000048 0.023389736377819183" rpy="8.75683157457e-17 -0.296705972839 3.14159265359" />
+      <geometry>
+        <box size="0.16 0.0095 0.08" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.68568840730838 -0.053250000000000484 0.030562022047541958" rpy="1.16593465255e-16 -0.383972435439 3.14159265359" />
+      <geometry>
+        <box size="0.16 0.0095 0.08" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.7600000000000025 0.05324999999999962 1.9373756672733388e-16" rpy="1.57079632679 -0.296705972839 3.14159265359" />
+      <geometry>
+        <cylinder radius="0.04" length="0.0095" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.6834956195229596 0.05324999999999962 0.023389736377819142" rpy="8.75683157457e-17 -0.296705972839 3.14159265359" />
+      <geometry>
+        <box size="0.16 0.0095 0.08" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="1.68568840730838 0.05324999999999961 0.030562022047541916" rpy="1.16593465255e-16 -0.383972435439 3.14159265359" />
+      <geometry>
+        <box size="0.16 0.0095 0.08" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="ARM">
+    <inertial>
+      <mass value="53.7797060658" />
+      <origin xyz="-0.133362844584537 0.0813367709948192 0.0" rpy="0 -0 0" />
+      <inertia ixx="0.35420506763418" ixy="-0.59676584437886" ixz="1.78134245842626e-16" iyy="5.16579159038522" iyz="6.97110293472855e-17" izz="5.39850890239257" />
+    </inertial>
+    <collision>
+      <origin xyz="-0.24300000000000033 -1.5533242026099217e-17 0.08450000000000005" rpy="1.57079632679 -0.336848545635 3.14159265359" />
+      <geometry>
+        <cylinder radius="0.0296" length="0.083" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.11936207534259712 -7.359996381010075e-18 0.04120261455456779" rpy="2.17510348387e-17 -0.336848545635 3.14159265359" />
+      <geometry>
+        <box size="0.262 0.083 0.0592" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.09103700321555463 -6.195145466645663e-17 0.09485604211514259" rpy="2.17510348387e-17 -0.336848545635 3.14159265359" />
+      <geometry>
+        <box size="0.14 0.083 0.07" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="-0.09112686398426773 -1.2057425648815144e-16 0.16088422976470257" rpy="1.46430338297e-16 -0.466002910282 3.14159265359" />
+      <geometry>
+        <box size="0.34 0.083 0.0592" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.05700000000000005 -2.233934448755695e-16 0.23580000000000023" rpy="1.57079632679 -1.02101761242 3.14159265359" />
+      <geometry>
+        <cylinder radius="0.0296" length="0.083" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.03581365767610803 -1.1292183821525238e-16 0.11726250003085589" rpy="1.14524417827e-16 -1.02101761242 3.14159265359" />
+      <geometry>
+        <box size="0.18 0.083 0.2192" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.47950000000000065 -1.174436280382313e-16 5.898059818321144e-17" rpy="0.0 -0.0 3.14159265359" />
+      <geometry>
+        <box size="0.971 0.083 0.06" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.12400000000000017 -6.589837740685943e-17 0.04000000000000006" rpy="0.0 -0.0 3.14159265359" />
+      <geometry>
+        <box size="0.4 0.083 0.06" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.9650000000000013 -2.363568322354394e-16 1.1817841611771973e-16" rpy="1.57079632679 -0.0872664625993 3.14159265359" />
+      <geometry>
+        <cylinder radius="0.03" length="0.083" />
+      </geometry>
+    </collision>
+    <collision>
+      <origin xyz="0.4813474740764582 -1.5547861078879205e-16 0.04231411310398813" rpy="-1.40826537065e-17 -0.0872664625997 -3.14159265359" />
+      <geometry>
+        <box size="0.971 0.083 0.06" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="TOHKU_PITCH">
+    <inertial>
+      <mass value="1e-06" />
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+  </link>
+
+  <link name="TOHKU_ROLL">
+    <inertial>
+      <mass value="1e-06" />
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+  </link>
+
+  <link name="TOHKU_TIP_01">
+    <inertial>
+      <mass value="1e-06" />
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+  </link>
+
+  <link name="TOHKU_TIP_02">
+    <inertial>
+      <mass value="1e-06" />
+      <origin xyz="0 0 0" rpy="0 -0 0" />
+      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0" />
+    </inertial>
+  </link>
+
+  <!-- Joint -->
+  <joint name="MFRAME" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 0 1" />
+    <parent link="TFRAME" />
+    <child link="MFRAME" />
+    <limit lower="-11.9991386075" upper="11.9991386075" effort="12000.0" velocity="180.0" />
+  </joint>
+  <joint name="BLOCK" type="revolute">
+    <origin xyz="0.845 -0.11 0.192" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 0 1" />
+    <parent link="MFRAME" />
+    <child link="BLOCK" />
+    <limit lower="-0.837758040957" upper="1.21300383014" effort="12000.0" velocity="1146.0" />
+  </joint>
+  <joint name="BOOM" type="revolute">
+    <origin xyz="0.0700000000000004 1.5265566588595902e-16 0.20000000000000012" rpy="1.57079632679 8.65956056235e-17 3.14159265359" />
+    <axis xyz="0 0 1" />
+    <parent link="BLOCK" />
+    <child link="BOOM" />
+    <limit lower="-1.31074226825" upper="0.928515162061" effort="15000.0" velocity="1146.0" />
+  </joint>
+  <joint name="ARM" type="revolute">
+    <origin xyz="-1.7599999999999993 5.551115123125783e-16 -9.71445146547012e-17" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 0 1" />
+    <parent link="BOOM" />
+    <child link="ARM" />
+    <limit lower="0.535816080362" upper="2.65464579228" effort="12000.0" velocity="1146.0" />
+  </joint>
+  <joint name="TOHKU_PITCH" type="revolute">
+    <origin xyz="-0.9649999999999999 1.6653345369377348e-16 -5.551115123125783e-17" rpy="1.57079632679 -1.11022302463e-16 1.57079632679" />
+    <axis xyz="0 1 0" />
+    <parent link="ARM" />
+    <child link="TOHKU_PITCH" />
+    <limit lower="-0.588175957922" upper="1.57079632679" effort="10000.0" velocity="5730.0" />
+  </joint>
+  <joint name="TOHKU_ROLL" type="revolute">
+    <origin xyz="9.992007221626409e-16 1.3183898417423734e-15 -0.22699999999999942" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 0 1" />
+    <parent link="TOHKU_PITCH" />
+    <child link="TOHKU_ROLL" />
+    <limit lower="-3.14159265359" upper="3.14159265359" effort="10000.0" velocity="573.0" />
+  </joint>
+  <joint name="TOHKU_TIP_01" type="revolute">
+    <origin xyz="9.992007221626409e-16 -7.077671781985373e-16 -0.3089999999999997" rpy="0.0 -0.0 0.0" />
+    <axis xyz="0 1 0" />
+    <parent link="TOHKU_ROLL" />
+    <child link="TOHKU_TIP_01" />
+    <limit lower="-0.349065850399" upper="0.0" effort="10000.0" velocity="573.0" />
+  </joint>
+  <joint name="TOHKU_TIP_02" type="revolute">
+    <origin xyz="9.992007221626409e-16 -7.077671781985373e-16 -0.3089999999999997" rpy="0.0 -0.0 3.14159265359" />
+    <axis xyz="0 1 0" />
+    <parent link="TOHKU_ROLL" />
+    <child link="TOHKU_TIP_02" />
+    <limit lower="-0.349065850399" upper="0.0" effort="10000.0" velocity="573.0" />
+  </joint>
+  
+</robot>

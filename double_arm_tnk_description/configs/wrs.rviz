@@ -1,0 +1,581 @@
+Panels:
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+  - Class: rviz/Displays
+    Help Height: 70
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /RobotModel1
+        - /RobotModel1/Links1/ARM1
+        - /RobotModel1/Links1/BLOCK1
+        - /RobotModel1/Links1/BOOM1
+        - /RobotModel1/Links1/HANDBASE1
+        - /RobotModel1/Links1/HANDLNK_I1
+        - /RobotModel1/Links1/HANDLNK_O1
+        - /RobotModel1/Links1/HANDSLNK_I1
+        - /RobotModel1/Links1/HANDSLNK_O1
+        - /RobotModel1/Links1/HANDTIP_L1
+        - /RobotModel1/Links1/HANDTIP_U1
+        - /RobotModel1/Links1/MANIARM1
+        - /RobotModel1/Links1/MANIBOOM1
+        - /RobotModel1/Links1/MANIELBOW1
+        - /RobotModel1/Links1/MANIFNG_L1
+        - /RobotModel1/Links1/MANIFNG_U1
+        - /RobotModel1/Links1/MFRAME1
+        - /RobotModel1/Links1/MNP_SWING1
+        - /RobotModel1/Links1/PUSHROD1
+        - /RobotModel1/Links1/TFRAME1
+        - /RobotModel1/Links1/TOHKU_PITCH1
+        - /RobotModel1/Links1/TOHKU_ROLL1
+        - /RobotModel1/Links1/TOHKU_TIP_011
+        - /RobotModel1/Links1/TOHKU_TIP_021
+        - /RobotModel1/Links1/UFRAME1
+        - /RobotModel1/Links1/WHEEL_L01
+        - /RobotModel1/Links1/WHEEL_L11
+        - /RobotModel1/Links1/WHEEL_L21
+        - /RobotModel1/Links1/WHEEL_L31
+        - /RobotModel1/Links1/WHEEL_R01
+        - /RobotModel1/Links1/WHEEL_R11
+        - /RobotModel1/Links1/WHEEL_R21
+        - /RobotModel1/Links1/WHEEL_R31
+        - /RobotModel1/Links1/WIRE_GUARD_L1
+        - /RobotModel1/Links1/WIRE_GUARD_R1
+        - /RobotModel1/Links1/YAWJOINT1
+        - /RobotModel1/Links1/base_footprint1
+      Splitter Ratio: 0.5
+    Tree Height: 371
+  - Class: rviz/Displays
+    Help Height: 75
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /TF1
+        - /TF1/Tree1
+        - /RobotModel1
+        - /RobotModel1/Links1/ARM1
+        - /RobotModel1/Links1/BLOCK1
+        - /RobotModel1/Links1/BOOM1
+        - /RobotModel1/Links1/HANDBASE1
+        - /RobotModel1/Links1/HANDLNK_I1
+        - /RobotModel1/Links1/HANDLNK_O1
+        - /RobotModel1/Links1/HANDSLNK_I1
+        - /RobotModel1/Links1/HANDSLNK_O1
+        - /RobotModel1/Links1/HANDTIP_L1
+        - /RobotModel1/Links1/HANDTIP_U1
+        - /RobotModel1/Links1/MANIARM1
+        - /RobotModel1/Links1/MANIBOOM1
+        - /RobotModel1/Links1/MANIELBOW1
+        - /RobotModel1/Links1/MANIFNG_L1
+        - /RobotModel1/Links1/MANIFNG_U1
+        - /RobotModel1/Links1/MFRAME1
+        - /RobotModel1/Links1/MNP_SWING1
+        - /RobotModel1/Links1/PUSHROD1
+        - /RobotModel1/Links1/TFRAME1
+        - /RobotModel1/Links1/TOHKU_PITCH1
+        - /RobotModel1/Links1/TOHKU_ROLL1
+        - /RobotModel1/Links1/TOHKU_TIP_011
+        - /RobotModel1/Links1/TOHKU_TIP_021
+        - /RobotModel1/Links1/UFRAME1
+        - /RobotModel1/Links1/WHEEL_L01
+        - /RobotModel1/Links1/WHEEL_L11
+        - /RobotModel1/Links1/WHEEL_L21
+        - /RobotModel1/Links1/WHEEL_L31
+        - /RobotModel1/Links1/WHEEL_R01
+        - /RobotModel1/Links1/WHEEL_R11
+        - /RobotModel1/Links1/WHEEL_R21
+        - /RobotModel1/Links1/WHEEL_R31
+        - /RobotModel1/Links1/WIRE_GUARD_L1
+        - /RobotModel1/Links1/WIRE_GUARD_R1
+        - /RobotModel1/Links1/YAWJOINT1
+        - /RobotModel1/Links1/base_footprint1
+      Splitter Ratio: 0.6763636469841003
+    Tree Height: 758
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        ARM:
+          Value: true
+        All Enabled: true
+        BLOCK:
+          Value: true
+        BOOM:
+          Value: true
+        HANDBASE:
+          Value: true
+        HANDLNK_I:
+          Value: true
+        HANDLNK_O:
+          Value: true
+        HANDSLNK_I:
+          Value: true
+        HANDSLNK_O:
+          Value: true
+        HANDTIP_L:
+          Value: true
+        HANDTIP_U:
+          Value: true
+        MANIARM:
+          Value: true
+        MANIBOOM:
+          Value: true
+        MANIELBOW:
+          Value: true
+        MANIFNG_L:
+          Value: true
+        MANIFNG_U:
+          Value: true
+        MFRAME:
+          Value: true
+        MNP_SWING:
+          Value: true
+        PUSHROD:
+          Value: true
+        TFRAME:
+          Value: true
+        TOHKU_PITCH:
+          Value: true
+        TOHKU_ROLL:
+          Value: true
+        TOHKU_TIP_01:
+          Value: true
+        TOHKU_TIP_02:
+          Value: true
+        UFRAME:
+          Value: true
+        WHEEL_L0:
+          Value: true
+        WHEEL_L1:
+          Value: true
+        WHEEL_L2:
+          Value: true
+        WHEEL_L3:
+          Value: true
+        WHEEL_R0:
+          Value: true
+        WHEEL_R1:
+          Value: true
+        WHEEL_R2:
+          Value: true
+        WHEEL_R3:
+          Value: true
+        WIRE_GUARD_L:
+          Value: true
+        WIRE_GUARD_R:
+          Value: true
+        YAWJOINT:
+          Value: true
+        base_footprint:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Tree:
+        base_footprint:
+          TFRAME:
+            MFRAME:
+              BLOCK:
+                BOOM:
+                  ARM:
+                    TOHKU_PITCH:
+                      TOHKU_ROLL:
+                        TOHKU_TIP_01:
+                          {}
+                        TOHKU_TIP_02:
+                          {}
+            UFRAME:
+              MNP_SWING:
+                MANIBOOM:
+                  MANIARM:
+                    MANIELBOW:
+                      YAWJOINT:
+                        HANDBASE:
+                          HANDLNK_I:
+                            {}
+                          HANDLNK_O:
+                            {}
+                          MANIFNG_L:
+                            HANDTIP_L:
+                              {}
+                          MANIFNG_U:
+                            HANDTIP_U:
+                              {}
+                          PUSHROD:
+                            HANDSLNK_I:
+                              {}
+                            HANDSLNK_O:
+                              {}
+            WHEEL_L0:
+              {}
+            WHEEL_L1:
+              {}
+            WHEEL_L2:
+              {}
+            WHEEL_L3:
+              {}
+            WHEEL_R0:
+              {}
+            WHEEL_R1:
+              {}
+            WHEEL_R2:
+              {}
+            WHEEL_R3:
+              {}
+            WIRE_GUARD_L:
+              {}
+            WIRE_GUARD_R:
+              {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        ARM:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        All Links Enabled: true
+        BLOCK:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        BOOM:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Expand Joint Details: false
+        Expand Link Details: true
+        Expand Tree: false
+        HANDBASE:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        HANDLNK_I:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HANDLNK_O:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HANDSLNK_I:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HANDSLNK_O:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HANDTIP_L:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HANDTIP_U:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Link Tree Style: Links in Alphabetic Order
+        MANIARM:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        MANIBOOM:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        MANIELBOW:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        MANIFNG_L:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        MANIFNG_U:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        MFRAME:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        MNP_SWING:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        PUSHROD:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        TFRAME:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        TOHKU_PITCH:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        TOHKU_ROLL:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        TOHKU_TIP_01:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        TOHKU_TIP_02:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        UFRAME:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        WHEEL_L0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_L1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_L2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_L3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_R0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_R1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_R2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WHEEL_R3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WIRE_GUARD_L:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        WIRE_GUARD_R:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        YAWJOINT:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        base_footprint:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /AizuSpider/FRONT_CAMERA/image_raw
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 6.1470255851745605
+        Min Value: -0.14527219533920288
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: AxisColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.02500000037252903
+      Style: Spheres
+      Topic: /point_map
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /AizuSpider/ARM_CAMERA/image_raw
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: base_footprint
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 7.287718772888184
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: -0.008981052786111832
+        Y: -0.34176820516586304
+        Z: 0.5752789378166199
+      Focal Shape Fixed Size: false
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.47039854526519775
+      Target Frame: base_footprint
+      Value: Orbit (rviz)
+      Yaw: 1.0003976821899414
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1052
+  Hide Left Dock: false
+  Hide Right Dock: true
+  Image:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000400000000000002280000037efc020000000afc0000003d0000037e0000000000fffffffaffffffff0100000002fb000000100044006900730070006c0061007900730000000000ffffffff0000015600fffffffb0000001200530065006c0065006300740069006f006e00000000000000016a0000007400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d0000037e000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d00610067006502000000ac000000f9000002750000017dfb000000100044006900730070006c00610079007300000001a6000002150000000000000000000000010000010f0000037efc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d0000037e000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b20000000000000000000000020000073f000000a9fc0100000002fb0000000a0049006d0061006700650200000000000000d50000030300000289fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003efc0100000002fb0000000800540069006d0065010000000000000780000002eb00fffffffb0000000800540069006d00650100000000000004500000000000000000000005520000037e00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 1920
+  X: 1600
+  Y: 0

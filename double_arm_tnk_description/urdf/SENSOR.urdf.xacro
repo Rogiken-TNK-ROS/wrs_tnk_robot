@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+<link name="SWING_TORQUE">
+  </link>
+  <joint name="SWING_TORQUE_JOINT" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+    <parent link="BLOCK" />
+    <child link="SWING_TORQUE" />
+  </joint>
+  <sensor name="SWING_TORQUE_SENSOR" update_rate="20">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+    <parent link="BLOCK" />
+  </sensor>
+  <link name="BOOM_TORQUE">
+  </link>
+  <joint name="BOOM_TORQUE_JOINT" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 7.14632589097e-16 3.14159265359" />
+    <parent link="BOOM" />
+    <child link="BOOM_TORQUE" />
+  </joint>
+  <sensor name="BOOM_TORQUE_SENSOR" update_rate="20">
+    <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 7.14632589097e-16 3.14159265359" />
+    <parent link="BOOM" />
+  </sensor>
+  <link name="ARM_TORQUE">
+  </link>
+  <joint name="ARM_TORQUE_JOINT" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 7.14632589097e-16 3.14159265359" />
+    <parent link="ARM" />
+    <child link="ARM_TORQUE" />
+  </joint>
+  <sensor name="ARM_TORQUE_SENSOR" update_rate="20">
+    <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 7.14632589097e-16 3.14159265359" />
+    <parent link="ARM" />
+  </sensor>
+  <link name="HAND_P_TORQUE">
+  </link>
+  <joint name="HAND_P_TORQUE_JOINT" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 7.14632589097e-16 3.14159265359" />
+    <parent link="TOHKU_PITCH" />
+    <child link="HAND_P_TORQUE" />
+  </joint>
+  <sensor name="HAND_P_TORQUE_SENSOR" update_rate="20">
+    <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 7.14632589097e-16 3.14159265359" />
+    <parent link="TOHKU_PITCH" />
+  </sensor>
+  <link name="MNP_SWING_TORQUE">
+  </link>
+  <joint name="MNP_SWING_TORQUE_JOINT" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 -0.0 1.57079632679" />
+    <parent link="MNP_SWING" />
+    <child link="MNP_SWING_TORQUE" />
+  </joint>
+  <sensor name="MNP_SWING_TORQUE_SENSOR" update_rate="20">
+    <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 -0.0 1.57079632679" />
+    <parent link="MNP_SWING" />
+  </sensor>
+  <link name="MNP_BOOM_TORQUE">
+  </link>
+  <joint name="MNP_BOOM_TORQUE_JOINT" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="7.8859849469e-16 9.95799250103e-17 -1.57079632679" />
+    <parent link="MANIBOOM" />
+    <child link="MNP_BOOM_TORQUE" />
+  </joint>
+  <sensor name="MNP_BOOM_TORQUE_SENSOR" update_rate="20">
+    <origin xyz="0.0 0.0 0.0" rpy="7.8859849469e-16 9.95799250103e-17 -1.57079632679" />
+    <parent link="MANIBOOM" />
+  </sensor>
+  <link name="MNP_ARM_TORQUE">
+  </link>
+  <joint name="MNP_ARM_TORQUE_JOINT" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="7.8859849469e-16 9.95799250103e-17 -1.57079632679" />
+    <parent link="MANIARM" />
+    <child link="MNP_ARM_TORQUE" />
+  </joint>
+  <sensor name="MNP_ARM_TORQUE_SENSOR" update_rate="20">
+    <origin xyz="0.0 0.0 0.0" rpy="7.8859849469e-16 9.95799250103e-17 -1.57079632679" />
+    <parent link="MANIARM" />
+  </sensor>
+  <link name="MNP_ELBOW_TORQUE">
+  </link>
+  <joint name="MNP_ELBOW_TORQUE_JOINT" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="7.8859849469e-16 9.95799250103e-17 -1.57079632679" />
+    <parent link="MANIELBOW" />
+    <child link="MNP_ELBOW_TORQUE" />
+  </joint>
+  <sensor name="MNP_ELBOW_TORQUE_SENSOR" update_rate="20">
+    <origin xyz="0.0 0.0 0.0" rpy="7.8859849469e-16 9.95799250103e-17 -1.57079632679" />
+    <parent link="MANIELBOW" />
+  </sensor>
+  <link name="MNP_YAW_TORQUE">
+  </link>
+  <joint name="MNP_YAW_TORQUE_JOINT" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="3.14159265359 -1.57079632679 0.0" />
+    <parent link="YAWJOINT" />
+    <child link="MNP_YAW_TORQUE" />
+  </joint>
+  <sensor name="MNP_YAW_TORQUE_SENSOR" update_rate="20">
+    <origin xyz="0.0 0.0 0.0" rpy="3.14159265359 -1.57079632679 0.0" />
+    <parent link="YAWJOINT" />
+  </sensor>
+  <link name="MNP_ROLL_TORQUE">
+  </link>
+  <joint name="MNP_ROLL_TORQUE_JOINT" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 -2.88998133609e-16 -3.00440511061e-16" />
+    <parent link="HANDBASE" />
+    <child link="MNP_ROLL_TORQUE" />
+  </joint>
+  <sensor name="MNP_ROLL_TORQUE_SENSOR" update_rate="20">
+    <origin xyz="0.0 0.0 0.0" rpy="1.57079632679 -2.88998133609e-16 -3.00440511061e-16" />
+    <parent link="HANDBASE" />
+  </sensor>
+  <link name="MNP_PUSH_FORCE">
+  </link>
+  <joint name="MNP_PUSH_FORCE_JOINT" type="fixed">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+    <parent link="PUSHROD" />
+    <child link="MNP_PUSH_FORCE" />
+  </joint>
+  <sensor name="MNP_PUSH_FORCE_SENSOR" update_rate="20">
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 -0.0 0.0" />
+    <parent link="PUSHROD" />
+  </sensor>
+</robot>
