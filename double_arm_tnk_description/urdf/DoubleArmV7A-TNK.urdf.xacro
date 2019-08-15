@@ -1,24 +1,8 @@
 <?xml version="1.0"?>
 <robot name="DoubleArmV7-TNK" xmlns:xacro="http://ros.org/wiki/xacro">
-
-  <xacro:include filename="$(find double_arm_tnk_description)/urdf/common.xacro"/>
   
-  <!-- == footprint frame == -->
-  <link name="base_footprint"/>
-  <joint name="base_footprint_to_TFRAME" type="fixed">
-    <origin xyz="0 0 0.520"/>
-    <parent link="base_footprint"/>
-    <child link="TFRAME"/>
-  </joint>
-  
-  <!-- == TOHOKU ARM == -->
-  <xacro:include filename="$(find double_arm_tnk_description)/urdf/TOHOKU_ARM.urdf.xacro"/>
-
-  <!-- == MANI ARM == -->
-  <xacro:include filename="$(find double_arm_tnk_description)/urdf/MANI_ARM.urdf.xacro"/>
-
-  <!-- == Base == -->
-  <xacro:include filename="$(find double_arm_tnk_description)/urdf/BASE.urdf.xacro"/>
+  <!-- == DoubleArmV7-TNK base == -->
+  <xacro:include filename="$(find double_arm_tnk_description)/urdf/DoubleArmV7A-TNK_base.urdf.xacro"/>
   
   <!-- == Sensor == -->
   <!-- <xacro:include filename="$(find double_arm_tnk_description)/urdf/SENSOR.urdf.xacro"/> -->
