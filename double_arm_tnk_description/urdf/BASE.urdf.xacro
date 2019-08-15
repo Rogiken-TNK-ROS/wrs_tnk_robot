@@ -1,6 +1,17 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
+  <!-- == Material == -->
+  <material name="wheel_color">
+    <color rgba="0.3 0.3 0.3 1"/>
+  </material>
+  <material name="wheel_guard_color">
+    <color rgba="0.3 0.3 0.3 0.8"/>
+  </material>
+  <material name="tframe_color">
+    <color rgba="0.3 0.3 0.3 1"/>
+  </material>
+  
   <!-- Link -->
   <link name="WHEEL_L0">
     <visual>
@@ -117,10 +128,8 @@
 
   <link name="WIRE_GUARD_L">
     <visual>
-      <!-- <origin xyz="0.02 0.61 -0.32" rpy="0.0 -0.0 0.0" /> -->
-      <!-- <origin xyz="0.26 0.6 -0.295" rpy="0.0 -0.0 0.0" /> -->
       <origin xyz="0.72 -0.01 0.0255" rpy="${M_PI/2} 0 0"/>
-      <material name="tframe_color"/>
+      <material name="wheel_guard_color"/>
       <geometry>
         <mesh filename="package://double_arm_tnk_description/meshes/tframe.stl"/>
       </geometry>
@@ -140,7 +149,7 @@
   <link name="WIRE_GUARD_R">
     <visual>
       <origin xyz="0.72 0.01 0.0255" rpy="${M_PI/2} 0 0"/>
-      <material name="tframe_color"/>
+      <material name="wheel_guard_color"/>
       <geometry>
         <mesh filename="package://double_arm_tnk_description/meshes/tframe.stl"/>
       </geometry>
