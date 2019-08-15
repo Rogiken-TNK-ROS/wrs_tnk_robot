@@ -5,6 +5,6 @@
   <xacro:include filename="$(find double_arm_tnk_description)/urdf/DoubleArmV7A-TNK_base.urdf.xacro"/>
   
   <!-- == Sensor == -->
-  <!-- <xacro:include filename="$(find double_arm_tnk_description)/urdf/SENSOR.urdf.xacro"/> -->
+  <xacro:include filename="$(find double_arm_tnk_description)/urdf/SENSOR.urdf.xacro"/>
   
 </robot>
