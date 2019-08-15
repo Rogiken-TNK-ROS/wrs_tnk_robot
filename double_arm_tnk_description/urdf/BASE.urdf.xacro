@@ -117,8 +117,6 @@
 
   <link name="WIRE_GUARD_L">
     <visual>
-      <!-- <origin xyz="0.02 0.61 -0.32" rpy="0.0 -0.0 0.0" /> -->
-      <!-- <origin xyz="0.26 0.6 -0.295" rpy="0.0 -0.0 0.0" /> -->
       <origin xyz="0.72 -0.01 0.0255" rpy="${M_PI/2} 0 0"/>
       <material name="tframe_color"/>
       <geometry>
