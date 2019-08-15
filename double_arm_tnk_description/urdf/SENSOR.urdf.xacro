@@ -3,7 +3,7 @@
 
   <link name="Velodyne"/>
   <joint name="Velodyne" type="fixed">
-    <origin xyz="0 0 0.6"/>
+    <origin xyz="0 0 0.6" rpy="${M_PI/2} 0 0"/>
     <parent link="TFRAME"/>
     <child link="Velodyne"/>
   </joint>
