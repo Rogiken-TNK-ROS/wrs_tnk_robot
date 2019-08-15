@@ -69,7 +69,6 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /TF1
         - /TF1/Tree1
         - /RobotModel1
         - /RobotModel1/Links1/ARM1
@@ -120,7 +119,7 @@ Visualization Manager:
     - Alpha: 0.5
       Cell Size: 1
       Class: rviz/Grid
-      Color: 160; 160; 164
+      Color: 0; 0; 0
       Enabled: true
       Line Style:
         Line Width: 0.029999999329447746
@@ -289,6 +288,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+          Value: true
         BOOM:
           Alpha: 1
           Show Axes: false
@@ -360,6 +360,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+          Value: true
         MNP_SWING:
           Alpha: 1
           Show Axes: false
@@ -513,7 +514,7 @@ Visualization Manager:
       Value: false
   Enabled: true
   Global Options:
-    Background Color: 48; 48; 48
+    Background Color: 238; 238; 236
     Default Light: true
     Fixed Frame: base_footprint
     Frame Rate: 30
@@ -539,25 +540,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 7.287718772888184
+      Distance: 5.910597801208496
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.008981052786111832
-        Y: -0.34176820516586304
-        Z: 0.5752789378166199
+        X: 0.7186727523803711
+        Y: 0.10589703917503357
+        Z: 0.5466532707214355
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.47039854526519775
+      Pitch: 0.6703983545303345
       Target Frame: base_footprint
       Value: Orbit (rviz)
-      Yaw: 1.0003976821899414
+      Yaw: 3.9254021644592285
     Saved: ~
 Window Geometry:
   Displays:
