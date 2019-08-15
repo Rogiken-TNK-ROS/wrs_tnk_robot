@@ -1,0 +1,12 @@
+<launch>
+  <arg name="model" default="$(find double_arm_tnk_description)/urdf/DoubleArmV7A-TNK.urdf.xacro"/>
+  <arg name="gui" default="True" />
+  <arg name="rviz_configs" value="$(find double_arm_tnk_description)/configs/wrs.rviz"/>
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(arg model)'"/>
+  <param name="use_gui" value="$(arg gui)"/>
+  <param name="use_sim_time" value="true"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher">
+    <remap from="joint_states" to="/DoubleArmV7/joint_states"/>
+  </node>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_configs)"/>
+</launch>
