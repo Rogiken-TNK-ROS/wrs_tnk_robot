@@ -19,8 +19,5 @@
 
   <!-- == Base == -->
   <xacro:include filename="$(find double_arm_tnk_description)/urdf/BASE.urdf.xacro"/>
-  
-  <!-- == Sensor == -->
-  <!-- <xacro:include filename="$(find double_arm_tnk_description)/urdf/SENSOR.urdf.xacro"/> -->
-  
+    
 </robot>
