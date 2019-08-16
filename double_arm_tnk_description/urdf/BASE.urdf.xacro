@@ -188,51 +188,43 @@
   </link>
 
   <!-- Joint -->
-  <joint name="WHEEL_L0" type="continuous">
+  <joint name="WHEEL_L0" type="fixed">
     <origin xyz="0.74 0.6 -0.295" rpy="0.0 -0.0 0.0" />
-    <axis xyz="0 1 0" />
     <parent link="TFRAME" />
     <child link="WHEEL_L0" />
   </joint>
-  <joint name="WHEEL_L1" type="continuous">
+  <joint name="WHEEL_L1" type="fixed">
     <origin xyz="0.26 0.6 -0.295" rpy="0.0 -0.0 0.0" />
-    <axis xyz="0 1 0" />
     <parent link="TFRAME" />
     <child link="WHEEL_L1" />
   </joint>
-  <joint name="WHEEL_L2" type="continuous">
+  <joint name="WHEEL_L2" type="fixed">
     <origin xyz="-0.22 0.6 -0.295" rpy="0.0 -0.0 0.0" />
-    <axis xyz="0 1 0" />
     <parent link="TFRAME" />
     <child link="WHEEL_L2" />
   </joint>
-  <joint name="WHEEL_L3" type="continuous">
+  <joint name="WHEEL_L3" type="fixed">
     <origin xyz="-0.7 0.6 -0.295" rpy="0.0 -0.0 0.0" />
-    <axis xyz="0 1 0" />
     <parent link="TFRAME" />
     <child link="WHEEL_L3" />
   </joint>
-  <joint name="WHEEL_R0" type="continuous">
+  <joint name="WHEEL_R0" type="fixed">
     <origin xyz="0.74 -0.6 -0.295" rpy="0.0 -0.0 0.0" />
-    <axis xyz="0 1 0" />
     <parent link="TFRAME" />
     <child link="WHEEL_R0" />
   </joint>
-  <joint name="WHEEL_R1" type="continuous">
+  <joint name="WHEEL_R1" type="fixed">
     <origin xyz="0.26 -0.6 -0.295" rpy="0.0 -0.0 0.0" />
-    <axis xyz="0 1 0" />
     <parent link="TFRAME" />
     <child link="WHEEL_R1" />
   </joint>
-  <joint name="WHEEL_R2" type="continuous">
+  <joint name="WHEEL_R2" type="fixed">
     <origin xyz="-0.22 -0.6 -0.295" rpy="0.0 -0.0 0.0" />
-    <axis xyz="0 1 0" />
     <parent link="TFRAME" />
     <child link="WHEEL_R2" />
   </joint>
-  <joint name="WHEEL_R3" type="continuous">
+  <joint name="WHEEL_R3" type="fixed">
     <origin xyz="-0.7 -0.6 -0.295" rpy="0.0 -0.0 0.0" />
-    <axis xyz="0 1 0" />
     <parent link="TFRAME" />
     <child link="WHEEL_R3" />
   </joint>
