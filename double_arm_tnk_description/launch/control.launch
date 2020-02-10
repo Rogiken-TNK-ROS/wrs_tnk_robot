@@ -1,0 +1,9 @@
+<launch>
+  <rosparam file="$(find double_arm_tnk_description)/configs/double_arm_tnk_control.yaml" command="load"/>
+
+  <!-- load the controllers -->
+  <node name="double_arm_tnk_controller_spawner" pkg="controller_manager"
+		type="spawner" output="screen" 
+		args="tohoku_arm_controller"/>
+
+</launch>

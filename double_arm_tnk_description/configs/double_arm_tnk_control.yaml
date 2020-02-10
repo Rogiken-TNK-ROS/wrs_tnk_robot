@@ -1,0 +1,39 @@
+# # Publish all joint states -----------------------------------
+# joint_state_controller:
+#   type: joint_state_controller/JointStateController
+#   publish_rate: 50
+
+# Trajectory Controllers
+tohoku_arm_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - MFRAME
+    - BLOCK
+    - BOOM
+    - ARM
+    - TOHKU_PITCH
+    - TOHKU_ROLL
+  gains:
+    MFRAME: {p: 50, i: 200, d: 0, i_clamp: 0}
+    BLOCK: {p: 50, i: 200, d: 0, i_clamp: 0}
+    BOOM: {p: 50, i: 200, d: 0, i_clamp: 0}
+    ARM: {p: 50, i: 200, d: 0, i_clamp: 0}
+    TOHKU_PITCH: {p: 50, i: 200, d: 0, i_clamp: 0}
+    TOHKU_ROLL: {p: 50, i: 200, d: 0, i_clamp: 0}
+mani_arm_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - UFRAME
+    - MNP_SWING
+    - MANI_BOOM
+    - MANIARM
+    - MANIELBOW
+    - YAWJOINT
+    - HANDBASE
+  gains:
+    MFRAME: {p: 50, i: 200, d: 0, i_clamp: 0}
+    BLOCK: {p: 50, i: 200, d: 0, i_clamp: 0}
+    BOOM: {p: 50, i: 200, d: 0, i_clamp: 0}
+    ARM: {p: 50, i: 200, d: 0, i_clamp: 0}
+    TOHKU_PITCH: {p: 50, i: 200, d: 0, i_clamp: 0}
+    TOHKU_ROLL: {p: 50, i: 200, d: 0, i_clamp: 0}
