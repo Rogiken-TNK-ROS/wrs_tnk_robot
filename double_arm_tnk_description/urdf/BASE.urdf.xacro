@@ -188,11 +188,13 @@
   </link>
 
   <!-- Joint -->
-  <joint name="WHEEL_L0" type="fixed">
+  <joint name="WHEEL_L0" type="continuous">
     <origin xyz="0.74 0.6 -0.295" rpy="0.0 -0.0 0.0" />
     <parent link="TFRAME" />
     <child link="WHEEL_L0" />
+    <axis xyz="0 -1 0"/>
   </joint>
+  <xacro:joint_velocity_trans_v0 name="WHEEL_L0"/>
   <joint name="WHEEL_L1" type="fixed">
     <origin xyz="0.26 0.6 -0.295" rpy="0.0 -0.0 0.0" />
     <parent link="TFRAME" />
@@ -208,11 +210,13 @@
     <parent link="TFRAME" />
     <child link="WHEEL_L3" />
   </joint>
-  <joint name="WHEEL_R0" type="fixed">
+  <joint name="WHEEL_R0" type="continuous">
     <origin xyz="0.74 -0.6 -0.295" rpy="0.0 -0.0 0.0" />
     <parent link="TFRAME" />
     <child link="WHEEL_R0" />
+    <axis xyz="0 -1 0"/>
   </joint>
+  <xacro:joint_velocity_trans_v0 name="WHEEL_R0"/>
   <joint name="WHEEL_R1" type="fixed">
     <origin xyz="0.26 -0.6 -0.295" rpy="0.0 -0.0 0.0" />
     <parent link="TFRAME" />
