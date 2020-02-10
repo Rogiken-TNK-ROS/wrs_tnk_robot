@@ -378,6 +378,7 @@
     <child link="UFRAME" />
     <limit lower="-11.9991386075" upper="11.9991386075" effort="12000.0" velocity="573.0" />
   </joint>
+  <xacro:joint_trans_v0 name="UFRAME"/>
   <joint name="MNP_SWING" type="revolute">
     <origin xyz="0.5595 -0.13 0.11800000000000005" rpy="0.0 -0.0 0.0" />
     <axis xyz="0 0 1" />
@@ -385,6 +386,7 @@
     <child link="MNP_SWING" />
     <limit lower="-1.0471975512" upper="1.0471975512" effort="12000.0" velocity="1146.0" />
   </joint>
+  <xacro:joint_trans_v0 name="MNP_SWING"/>
   <joint name="MANIBOOM" type="revolute">
     <origin xyz="0.07000000000000028 1.942890293094024e-16 0.1400000000000003" rpy="-1.57079632679 1.57079632679 0.0" />
     <axis xyz="0 0 1" />
@@ -392,6 +394,7 @@
     <child link="MANIBOOM" />
     <limit lower="0.0" upper="2.00712863979" effort="15000.0" velocity="573.0" />
   </joint>
+  <xacro:joint_trans_v0 name="MANIBOOM"/>
   <joint name="MANIARM" type="revolute">
     <origin xyz="-1.4799999999999995 0.0800000000000003 -4.718447854656915e-16" rpy="0.0 -0.0 3.14159265359" />
     <axis xyz="0 0 1" />
@@ -399,6 +402,7 @@
     <child link="MANIARM" />
     <limit lower="-1.91986217719" upper="0.0" effort="12000.0" velocity="573.0" />
   </joint>
+  <xacro:joint_trans_v0 name="MANIARM"/>
   <joint name="MANIELBOW" type="revolute">
     <origin xyz="-0.5499999999999989 0.27000000000000035 1.942890293094024e-16" rpy="1.57079632679 1.16573417586e-15 1.57079632679" />
     <axis xyz="0 1 0" />
@@ -406,6 +410,7 @@
     <child link="MANIELBOW" />
     <limit lower="-1.57079632679" upper="0.349065850399" effort="10000.0" velocity="573.0" />
   </joint>
+  <xacro:joint_trans_v0 name="MANIELBOW"/>
   <joint name="YAWJOINT" type="revolute">
     <origin xyz="-4.440892098500626e-16 5.273559366969494e-16 -0.2300000000000002" rpy="0.0 -0.0 0.0" />
     <axis xyz="1 0 0" />
@@ -413,6 +418,7 @@
     <child link="YAWJOINT" />
     <limit lower="-0.881042206407" upper="0.881042206407" effort="10000.0" velocity="573.0" />
   </joint>
+  <xacro:joint_trans_v0 name="YAWJOINT"/>
   <joint name="HANDBASE" type="revolute">
     <origin xyz="-4.440892098500626e-16 -2.7755575615628914e-17 -0.40529999999999977" rpy="0.0 -0.0 0.0" />
     <axis xyz="0 0 -1" />
@@ -420,6 +426,7 @@
     <child link="HANDBASE" />
     <limit lower="-4.71238898038" upper="4.71238898038" effort="8000.0" velocity="573.0" />
   </joint>
+  <xacro:joint_trans_v0 name="HANDBASE"/>
   <joint name="PUSHROD" type="prismatic">
     <origin xyz="-1.1102230246251565e-16 -2.7755575615628914e-17 -0.0917" rpy="0.0 -0.0 0.0" />
     <axis xyz="0 0 -1" />
@@ -427,6 +434,7 @@
     <child link="PUSHROD" />
     <limit lower="-0.000884881930761" upper="0.0" effort="8000.0" velocity="573.0" />
   </joint>
+  <xacro:joint_trans_v0 name="PUSHROD"/>
   <joint name="HANDSLNK_I" type="revolute">
     <origin xyz="1.1102230246251565e-16 3.885780586188048e-16 1.1102230246251565e-16" rpy="-1.57079632679 0.502146933762 3.14159265359" />
     <axis xyz="0 0 1" />

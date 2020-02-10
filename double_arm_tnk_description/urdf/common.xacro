@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-  <property name="M_PI" value="3.14159274"/>
+  <xacro:property name="M_PI" value="3.14159274"/>
 
   <xacro:macro name="cylinder_inertial" params="mass radius length">
 	<mass value="${mass}"/>
@@ -15,5 +15,16 @@
 			 iyy="${(mass*(height*height+depth*depth))/12}" iyz="0"
 			 izz="${(mass*(height*height+width*width))/12}" />
   </xacro:macro>
-  
+
+  <xacro:macro name="joint_trans_v0" params="name">
+	<transmission name="${name}_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="${name}">
+		<hardwareInterface>PositionJointInterface</hardwareInterface>
+      </joint>
+	  <actuator name="${name}_motor">
+		<hardwareInterface>PositionJointInterface</hardwareInterface>
+      </actuator>
+	</transmission>
+  </xacro:macro>
 </robot>

@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
-<robot  xmlns:xacro="http://ros.org/wiki/xacro">
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <!-- == Material == -->
+  <xacro:include filename="$(find double_arm_tnk_description)/urdf/common.xacro"/>
+    <!-- == Material == -->
   <material name="mframe_color">
     <color rgba="0.2 0.2 0.2 1"/>
   </material>
@@ -199,6 +200,7 @@
     <child link="MFRAME" />
     <limit lower="-11.9991386075" upper="11.9991386075" effort="12000.0" velocity="180.0" />
   </joint>
+  <xacro:joint_trans_v0 name="MFRAME"/>
   <joint name="BLOCK" type="revolute">
     <origin xyz="0.845 -0.11 0.192" rpy="0.0 -0.0 0.0" />
     <axis xyz="0 0 1" />
@@ -206,6 +208,7 @@
     <child link="BLOCK" />
     <limit lower="-0.837758040957" upper="1.21300383014" effort="12000.0" velocity="1146.0" />
   </joint>
+  <xacro:joint_trans_v0 name="BLOCK"/>
   <joint name="BOOM" type="revolute">
     <origin xyz="0.0700000000000004 1.5265566588595902e-16 0.20000000000000012" rpy="1.57079632679 8.65956056235e-17 3.14159265359" />
     <axis xyz="0 0 1" />
@@ -213,6 +216,7 @@
     <child link="BOOM" />
     <limit lower="-1.31074226825" upper="0.928515162061" effort="15000.0" velocity="1146.0" />
   </joint>
+  <xacro:joint_trans_v0 name="BOOM"/>
   <joint name="ARM" type="revolute">
     <origin xyz="-1.7599999999999993 5.551115123125783e-16 -9.71445146547012e-17" rpy="0.0 -0.0 0.0" />
     <axis xyz="0 0 1" />
@@ -220,6 +224,7 @@
     <child link="ARM" />
     <limit lower="0.535816080362" upper="2.65464579228" effort="12000.0" velocity="1146.0" />
   </joint>
+  <xacro:joint_trans_v0 name="ARM"/>
   <joint name="TOHKU_PITCH" type="revolute">
     <origin xyz="-0.9649999999999999 1.6653345369377348e-16 -5.551115123125783e-17" rpy="1.57079632679 -1.11022302463e-16 1.57079632679" />
     <axis xyz="0 1 0" />
@@ -227,6 +232,7 @@
     <child link="TOHKU_PITCH" />
     <limit lower="-0.588175957922" upper="1.57079632679" effort="10000.0" velocity="5730.0" />
   </joint>
+  <xacro:joint_trans_v0 name="TOHKU_ROLL"/>
   <joint name="TOHKU_ROLL" type="revolute">
     <origin xyz="9.992007221626409e-16 1.3183898417423734e-15 -0.22699999999999942" rpy="0.0 -0.0 0.0" />
     <axis xyz="0 0 1" />
@@ -234,6 +240,7 @@
     <child link="TOHKU_ROLL" />
     <limit lower="-3.14159265359" upper="3.14159265359" effort="10000.0" velocity="573.0" />
   </joint>
+  <xacro:joint_trans_v0 name="TOHKU_PITCH"/>
   <joint name="TOHKU_TIP_01" type="revolute">
     <origin xyz="9.992007221626409e-16 -7.077671781985373e-16 -0.3089999999999997" rpy="0.0 -0.0 0.0" />
     <axis xyz="0 1 0" />
@@ -241,6 +248,7 @@
     <child link="TOHKU_TIP_01" />
     <limit lower="-0.349065850399" upper="0.0" effort="10000.0" velocity="573.0" />
   </joint>
+  <xacro:joint_trans_v0 name="TOHKU_TIP_01"/>
   <joint name="TOHKU_TIP_02" type="revolute">
     <origin xyz="9.992007221626409e-16 -7.077671781985373e-16 -0.3089999999999997" rpy="0.0 -0.0 3.14159265359" />
     <axis xyz="0 1 0" />
@@ -248,5 +256,6 @@
     <child link="TOHKU_TIP_02" />
     <limit lower="-0.349065850399" upper="0.0" effort="10000.0" velocity="573.0" />
   </joint>
+  <xacro:joint_trans_v0 name="TOHKU_TIP_02"/>
   
 </robot>
