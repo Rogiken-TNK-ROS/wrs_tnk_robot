@@ -4,6 +4,8 @@
   <!-- load the controllers -->
   <node name="double_arm_tnk_controller_spawner" pkg="controller_manager"
 		type="spawner" output="screen" 
-		args="tohoku_arm_controller"/>
+		args="tohoku_arm_controller
+              mani_arm_controller
+              base_controller"/>
 
 </launch>
